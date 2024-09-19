@@ -60,7 +60,7 @@ public class Lobster extends Actor
             World world = getWorld();
             world.removeObject(worm);
             Greenfoot.playSound("eating.wav");
-            world.addObject( new  Lobster(), getX(), getY());
+            world.addObject( new Lobster(), getX(), getY());
         }
     }
 
@@ -83,7 +83,7 @@ public class Lobster extends Actor
      */
     public void transitionToGameOverWorld()
     {
-        World GameOverWorld =  new  GameOverWorld();
+        World GameOverWorld =  new GameOverWorld();
         Greenfoot.setWorld(GameOverWorld);
     }
 }
